@@ -19,10 +19,12 @@ def main():
     if operationToExcute == '1' or operationToExcute == '2' or operationToExcute == '3' or operationToExcute == '4' or operationToExcute == '5' or operationToExcute == '6':
         number2 = int(input("Ingrese valor dos: "))
     #Imprimir en consola el resultado
-    if operationToExcute == '7' or operationToExcute == '8':
-        print(Client.validateOperation(operationToExcute, number1))
-    else:
+    if operationToExcute == '1' or operationToExcute == '2' or operationToExcute == '3' or operationToExcute == '4' or operationToExcute == '5' or operationToExcute == '6':
         print(Client.validateOperation(operationToExcute, number1, number2))
+    elif operationToExcute == '7' or operationToExcute == '8':
+        print(Client.validateOtherOperation(operationToExcute, number1))
+    else:
+        print("Esa operación no existe.")        
 
 if __name__== '__main__':
     main()

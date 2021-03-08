@@ -17,7 +17,7 @@ class Client:
             return Operation.Exponente(number1,number2)
         return resultado
 
-    def validateOperation(operar, number1):
+    def validateOtherOperation(operar, number1):
         resultado = 0                
         if operar == '7':
             return Operation.RaizCuadrada(number1)  
